@@ -20,7 +20,6 @@ footer {
     color: white;
 }
 
-
 /*/ COMMON */
 
 
@@ -46,6 +45,11 @@ header .header-container img {
 header .header-container ul {
     list-style-type: none;
     display: flex;
+}
+
+header .header-container a {
+    text-decoration: none;
+    color: white;
 }
 
 header .categoria li,
@@ -157,6 +161,11 @@ footer {
     list-style-type: none;
     display: flex;
     gap: 10px;
+}
+
+footer .footer-container a {
+    text-decoration: none;
+    color: white;
 }
 
 /*/ FOOTER */
