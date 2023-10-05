@@ -25,17 +25,22 @@ footer {
 
 /* HEADER */
 
-.header-container {
+header {
     padding: 10px 0 30px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     background-color: #ff6900;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 99;
+}
+
+.header-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header .header-container img {
@@ -70,15 +75,26 @@ header .awsome li {
 .main-container .row {
     max-width: 1250px;
     margin: 0 auto;
-    padding: 50px 0;
     display: flex;
     gap: 20px;
 }
 
 .main-container .row .product {
     margin: 0 auto;
-    width: calc(100% / 3 - 20px);
+    width: calc((100% - 40px) / 3);
     position: relative;
+}
+
+.immagine {
+    position: relative;
+}
+
+.row.top {
+    padding-top: 50px;
+}
+
+.row.bottom {
+    padding: 50px 0;
 }
 
 .product img {
@@ -94,28 +110,29 @@ header .awsome li {
     right: 0;
 }
 
-.heart:hover {
+.product .immagine .heart:hover {
     color: red;
 }
 
-.sale {
+.product .immagine .sale {
     color: white;
+    font-weight: bold;
     position: absolute;
     left: 0;
-    bottom: 90px;
+    bottom: 40px;
 }
 
-.red {
+.product .immagine .sale .red {
     background-color: red;
     padding: 5px;
 }
 
-.green {
+.product .immagine .sale .green {
     background-color: green;
     padding: 5px;
 }
 
-.price {
+.product .immagine .sale .price {
     color: red;
     font-weight: bold;
 }
@@ -133,7 +150,10 @@ header .awsome li {
 
 .product:hover .hover {
     display: block;
+}
 
+.hover:hover .immagine {
+    display: none;
 }
 
 /*/ MAIN */
