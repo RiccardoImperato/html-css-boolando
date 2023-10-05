@@ -26,6 +26,7 @@ footer {
 /* HEADER */
 
 header {
+    height: 70px;
     padding: 10px 0 30px;
     background-color: #ff6900;
     position: fixed;
@@ -52,6 +53,10 @@ header .header-container ul {
     display: flex;
 }
 
+.awsome ul {
+    justify-content: end;
+}
+
 header .header-container a {
     text-decoration: none;
     color: white;
@@ -63,13 +68,20 @@ header .awsome li {
     font-size: 15px;
 }
 
+header .categoria,
+header .awsome {
+    width: 20%;
+}
+
+
 /*/ HEADER */
 
 
 /* MAIN */
 
 .main-container {
-    padding-top: 80px;
+    padding-top: 70px;
+    margin: 50px;
 }
 
 .main-container .row {
@@ -87,14 +99,6 @@ header .awsome li {
 
 .immagine {
     position: relative;
-}
-
-.row.top {
-    padding-top: 50px;
-}
-
-.row.bottom {
-    padding: 50px 0;
 }
 
 .product img {
